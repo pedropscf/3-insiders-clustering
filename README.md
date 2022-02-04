@@ -58,16 +58,31 @@ other copies followed for the embedding process. With this, the clustering train
 - **T-SNE;**
 - **Training a RandomForest regressor on the purchases feature, then embedding the estimators with UMAP.**
 
-(**INSERIR FIGURAS DOS DIFERENTES ESPAÇOS DE EMBEDDING**)
+<p align="center">
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/pca_embed.png" width=500 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/umap_embed.png" width=500 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/tsne_embed.png" width=500 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/tree_embed.png" width=500 />
+</p>
+
 
 ### Clustering with different models (K-Means, GMM and Hierarchical) on both embedded space and original space
 
 With the data cleaned, features created, selected and rescaled and different embedded spaces, the clustering process began with 3 different models: K-Means, Gaussian Mixture Model and Hierarchical.
-The training was done for different values of the main clustering hyperparameter, **the number of clusters, k**. The values tested were: 2, 3, 4, 5, 6, 8, 10, 12, 14, 16 and 20.
+The training was done for different values of the main clustering hyperparameter, **the number of clusters, k**. The values tested were: 2, 3, 4, 5, 6, 8, 10, 12, 14, 16 and 20. The metric used to compare the performance of different models were the **silhouette score**.
 
-The metric used to compare the performance of different models were the **silhouette score**. The model chosen were the Gaussian Mixture Model with 8 clusters, despite the fact that 6 clusters had a better metric,
+<p align="center">
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/training_results.png" />
+</p>
+
+The model chosen were the Gaussian Mixture Model with 8 clusters on UMAP embedded space, despite the fact that 6 clusters had a better metric,
 it did not clusterized very well the high value customers (the cluster with highest monetary score, had almost 34% of all customers). So, **the choice to increase the number of clusters was made to better clusterize 
-customers with better monetary score, going from 34% of the dataset to around 15%.**
+customers with better monetary score, going from 34% of the dataset to around 15%.** The clusters in the embedded space can be seem in the following image.
+
+<p align="center">
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/clusters.png" />
+</p>
+
 
 (**INSERIR FIGURAS DOS RESULTADOS DE TREINAMENTO**)
 
