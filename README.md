@@ -59,10 +59,10 @@ other copies followed for the embedding process. With this, the clustering train
 - **Training a RandomForest regressor on the purchases feature, then embedding the estimators with UMAP.**
 
 <p align="center">
-  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/pca_embed.png" width=500 />
-  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/umap_embed.png" width=500 />
-  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/tsne_embed.png" width=500 />
-  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/tree_embed.png" width=500 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/pca_embed.png" width=400 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/umap_embed.png" width=400 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/tsne_embed.png" width=400 />
+  <img src="https://github.com/pedropscf/3-insiders-clustering/blob/82aaccd692f2bf5bd2771db2bc1eb48974df2351/reports/figures/tree_embed.png" width=400 />
 </p>
 
 
