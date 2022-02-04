@@ -12,7 +12,7 @@ However, the company does not know the best way to categorize those customers an
 
 ## Features
 
-To answer this questions, the company sended a dataset with purchases and devolutions of different customers over the last year. The dataset contains over 500,000 and the following features:
+To answer these questions, the company sended a dataset with purchases and devolutions of different customers over the last year. The dataset contains over 500,000 and the following features:
 
 | Feature  | Description |
 | ------------- | ------------- |
@@ -29,7 +29,7 @@ To answer this questions, the company sended a dataset with purchases and devolu
 
 The problem was classified as a classical non-supervised machine learning problem involving
 the clusterization (or categorization) of different customers by their similarities. The solution
-was develop **in cycles**, making possible to make incremental improvements on the solution over the time. It can be summarized in the steps below:
+was develop **in cycles**, making possible to make incremental improvements on the solution over the time, and the full detailed solution along with all the code, [can be seen in this file](https://github.com/pedropscf/3-insiders-clustering/blob/0c7ca6264ebb45115b8a66c4efd6e25487434f35/output.ipynb). It can be summarized in the steps below:
 
 ### Data cleaning and manipulation
 
@@ -45,7 +45,7 @@ At this point, many features were created and tested in different solution cycle
 
 ### Exploratory data analysis
 
-The initial EDA had the main objective of searching for outlier customers, on the different distributions of the features and their relation (and correlation). The pandas-profilling report (**INSERT THE LINK HERE**) were used to speed up the process and
+The initial EDA had the main objective of searching for outlier customers, on the different distributions of the features and their relation (and correlation). The pandas-profilling report (**[link to access the file](https://github.com/pedropscf/3-insiders-clustering/blob/0c7ca6264ebb45115b8a66c4efd6e25487434f35/reports/univariate_output.html)**) were used to speed up the process and
 for the relation between variables, the pairplot of the most informational features were used to understand the relation between features.
 
 ### Feature selection, transformation and embedding space
